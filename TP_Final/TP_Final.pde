@@ -1,3 +1,8 @@
+//Gradiente nas teclas pretas
+//Gradiente nas teclas pretas
+//Gradiente nas teclas pretas
+
+
 int num = 3800;
 PFont magicFont;
 PFont labelFont, labelFontSmall;
