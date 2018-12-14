@@ -1,0 +1,38 @@
+int num = 3000;
+
+Particle[] particles = new Particle[num];
+
+
+void setup() {
+  float partColor = random(150, 250);
+  size(960, 400);
+  noStroke();
+  for (int i = 0; i<num; i++) {
+    particles[i] =new Particle(random(0, width), random(-50, height/2), 2, 0, 0, 
+      color(partColor, partColor, partColor));
+  }
+  background(#1C1C1C);
+  PFont magicFont = createFont("magic.ttf", 50);
+  textFont(magicFont);
+  loadSounds();
+  //C3.play();
+}
+
+
+void draw() {
+  background(0);
+  noStroke();
+  for (int i = 0; i<num; i++) {
+
+    particles[i].applyForce();
+    particles[i].ramdomForce();
+    particles[i].velocity.mult(0.9);
+
+    particles[i].update();
+    particles[i].display();
+  }
+  fill(#FFFFFF);
+  stroke(1);
+  text("Magic Piano", 10, 65);
+  drawKeys();
+}

@@ -1,4 +1,4 @@
-int num = 4000;
+int num = 3800;
 PFont magicFont;
 PFont labelFont, labelFontSmall;
 PImage bg;
@@ -11,11 +11,11 @@ void setup() {
   noStroke();
   for (int i = 0; i<num; i++) {
     partColor = random(220, 250);
-    particles[i] =new Particle(random(0, width), random(0, height/2), 2, 0, 0, 
+    particles[i] =new Particle(random(0, width), random(0, height/2), 2.5, 0, 0, 
       color(partColor, partColor, partColor));
   }
   //background(#1C1C1C);
-  bg = loadImage("data/bg.jpg");
+  bg = loadImage("data/bg2.jpg");
   magicFont = createFont("data/magic.ttf", 50);
   labelFont = createFont("data/ArialMT-30.vlw", 20);
   labelFontSmall = createFont("data/ArialMT-30.vlw", 14);
@@ -26,7 +26,7 @@ void setup() {
 
 void draw() {
   //background(0);
-  image(bg,0,0);
+  image(bg,0,0,960,563);
   noStroke();
   for (int i = 0; i<num; i++) {
 
@@ -37,13 +37,18 @@ void draw() {
     particles[i].update();
     particles[i].display();
   }
-  fill(#FFFFFF);
-  stroke(1);
   
-  
+  fill(#000000);
+  textSize(60);
   textFont(magicFont);
-  text("Merry Christmas", 10, 65);
+  text("Feliz Natal", 8, 65);
+  fill(#FFFFFF);
+  textSize(50);
+  textFont(magicFont);
+  text("Feliz Natal", 10, 65);
+  
+  
   
   drawKeys();
-  println(mouseX+","+mouseY);
+  //println(mouseX+","+mouseY);
 }

@@ -58,44 +58,46 @@ void applyKeyForce(int x, int y) {
 void keyPressed(){
   println(key);
   if(key == 'q') { C1.play();applyKeyForce(30, 198);}
-  if(key == '2') { Db1.play();applyKeyForce(55, 198);}
+  if(key == '2') { Db1.play();}
   if(key == 'w') { D1.play();applyKeyForce(80, 198);}
-  if(key == '3') { Eb1.play();applyKeyForce(105, 198);}
+  if(key == '3') { Eb1.play();}
   if(key == 'e') { E1.play();applyKeyForce(130, 198);}
   if(key == 'r') { F1.play();applyKeyForce(180, 198);}
-  if(key == '5') { Gb1.play();applyKeyForce(205, 198);}
+  if(key == '5') { Gb1.play();}
   if(key == 't') { G1.play();applyKeyForce(230, 198);}
-  if(key == '6') { Ab1.play();applyKeyForce(255, 198);}
+  if(key == '6') { Ab1.play();}
   if(key == 'y') { A1.play();applyKeyForce(280, 198);}
-  if(key == '7') { Bb1.play();applyKeyForce(305, 198);}
+  if(key == '7') { Bb1.play();}
   if(key == 'u') { B1.play();applyKeyForce(330, 198);}
   if(key == 'z' || key == 'i') { C2.play();applyKeyForce(380, 198);}
-  if(key == 's') { Db2.play();applyKeyForce(405, 198);}
+  if(key == 's') { Db2.play();}
   if(key == 'x') { D2.play();applyKeyForce(430, 198);}
-  if(key == 'd') { Eb2.play();applyKeyForce(455, 198);}
+  if(key == 'd') { Eb2.play();}
   if(key == 'c') { E2.play();applyKeyForce(480, 198);}
   if(key == 'v') { F2.play();applyKeyForce(530, 198);}
-  if(key == 'g') { Gb2.play();applyKeyForce(555, 198);}
+  if(key == 'g') { Gb2.play();}
   if(key == 'b') { G2.play();applyKeyForce(580, 198);}
-  if(key == 'h') { Ab2.play();applyKeyForce(605, 198);}
+  if(key == 'h') { Ab2.play();}
   if(key == 'n') { A2.play();applyKeyForce(630, 198);}
-  if(key == 'j') { Bb2.play();applyKeyForce(655, 198);}
+  if(key == 'j') { Bb2.play();}
   if(key == 'm') { B2.play();applyKeyForce(680, 198);}
   if(key == ',') { C3.play();applyKeyForce(730, 198);}
-  if(key == 'l') { Db3.play();applyKeyForce(755, 198);}
+  if(key == 'l') { Db3.play();}
   if(key == '.') { D3.play();applyKeyForce(780, 198);}
-  if(key == 'ç') { Eb3.play();applyKeyForce(805, 198);}
+  if(key == 'ç') { Eb3.play();}
   if(key == ';') { E3.play();applyKeyForce(830, 198);}
   if(key == '/') { F3.play();applyKeyForce(880, 198);}
-  if(key == ']') { Gb3.play();applyKeyForce(905, 198);}
+  if(key == ']') { Gb3.play();}
   if(key == '￿') { G3.play();applyKeyForce(930, 198);}
 }
 
 void mousePressed() {
   if (mouseX > 5 && mouseX < 55 && mouseY > 318 && mouseY < 395 ||
     mouseX > 5 && mouseX < 41   && mouseY > 198 && mouseY < 318)
-  {C1.play(); applyKeyForce(30, 198);} 
-  else if (mouseX > 55 && mouseX < 105 && mouseY > 318 && mouseY < 395 ||
+  {
+    C1.play(); 
+    applyKeyForce(30, 198);
+  } else if (mouseX > 55 && mouseX < 105 && mouseY > 318 && mouseY < 395 ||
     mouseX > 68 && mouseX < 91         && mouseY > 198 && mouseY < 318)
     {D1.play();applyKeyForce(80, 198);}
   else if (mouseX > 105 && mouseX < 155 && mouseY > 318 && mouseY < 395 ||
