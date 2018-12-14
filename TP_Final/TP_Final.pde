@@ -19,13 +19,11 @@ void setup() {
     particles[i] =new Particle(random(0, width), random(0, height/2), 2.5, 0, 0, 
       color(partColor, partColor, partColor));
   }
-  //background(#1C1C1C);
   bg = loadImage("data/bg2.jpg");
   magicFont = createFont("data/magic.ttf", 50);
   labelFont = createFont("data/ArialMT-30.vlw", 20);
   labelFontSmall = createFont("data/ArialMT-30.vlw", 14);
   loadSounds();
-  //C3.play();
 }
 
 
