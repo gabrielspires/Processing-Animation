@@ -1,20 +1,21 @@
-int num = 3000;
+int num = 4000;
 PFont magicFont;
 PFont labelFont, labelFontSmall;
-
+PImage bg;
 Particle[] particles = new Particle[num];
 
 
 void setup() {
-  float partColor = random(150, 250);
+  float partColor;
   size(960, 400);
   noStroke();
   for (int i = 0; i<num; i++) {
+    partColor = random(220, 250);
     particles[i] =new Particle(random(0, width), random(0, height/2), 2, 0, 0, 
       color(partColor, partColor, partColor));
   }
-  background(#1C1C1C);
-  
+  //background(#1C1C1C);
+  bg = loadImage("data/bg.jpg");
   magicFont = createFont("data/magic.ttf", 50);
   labelFont = createFont("data/ArialMT-30.vlw", 20);
   labelFontSmall = createFont("data/ArialMT-30.vlw", 14);
@@ -24,7 +25,8 @@ void setup() {
 
 
 void draw() {
-  background(0);
+  //background(0);
+  image(bg,0,0);
   noStroke();
   for (int i = 0; i<num; i++) {
 
@@ -40,7 +42,7 @@ void draw() {
   
   
   textFont(magicFont);
-  text("Magic Piano", 10, 65);
+  text("Merry Christmas", 10, 65);
   
   drawKeys();
   println(mouseX+","+mouseY);

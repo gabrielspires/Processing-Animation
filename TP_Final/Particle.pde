@@ -49,6 +49,17 @@ class Particle {
     }
   }
 
+  void keyForce(int x, int y) {
+    PVector target = new PVector(x, y);
+    force = PVector.sub(target, position);
+    float distance = force.mag();
+    if (15.0 < distance) {
+      force.normalize();
+      force.mult(-2500.0/pow(distance, 2));
+      velocity.add(force);
+    }
+  }
+
   void ramdomForce() {
     PVector force = new PVector(random(-0.08, 0.08), random(0/*-0.08*/, 0.12));
     velocity.add(force);
