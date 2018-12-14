@@ -1,8 +1,8 @@
 import processing.sound.*;
 
 SoundFile 
-A1, A2, Ab1, Ab2,
-B1, B2, Bb1, Bb2,
+A1, A2, A3, Ab1, Ab2,
+B1, B2, B3, Bb1, Bb2,
 C1, C2, C3,
 D1, D2, D3, Db1, Db2, Db3,
 E1, E2, E3, Eb1, Eb2, Eb3,
@@ -12,10 +12,12 @@ G1, G2, G3, Gb1, Gb2, Gb3;
 void loadSounds() {
   A1 = new SoundFile(this, "sounds/Piano.ff.A1.mp3");
   A2 = new SoundFile(this, "sounds/Piano.ff.A2.mp3");
+  //A3 = new SoundFile(this, "sounds/Piano.ff.A3.mp3");
   Ab1 = new SoundFile(this, "sounds/Piano.ff.Ab1.mp3");
   Ab2 = new SoundFile(this, "sounds/Piano.ff.Ab2.mp3");
   B1 = new SoundFile(this, "sounds/Piano.ff.B1.mp3");
   B2 = new SoundFile(this, "sounds/Piano.ff.B2.mp3");
+  //B3 = new SoundFile(this, "sounds/Piano.ff.B3.mp3");
   Bb1 = new SoundFile(this, "sounds/Piano.ff.Bb1.mp3");
   Bb2 = new SoundFile(this, "sounds/Piano.ff.Bb2.mp3");
   C1 = new SoundFile(this, "sounds/Piano.ff.C1.mp3");
