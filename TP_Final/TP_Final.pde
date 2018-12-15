@@ -13,6 +13,7 @@ Particle[] particles = new Particle[num];
 void setup() {
   float partColor;
   size(960, 400);
+  frameRate(60);
   noStroke();
   for (int i = 0; i<num; i++) {
     partColor = random(220, 250);
