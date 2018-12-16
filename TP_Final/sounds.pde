@@ -1,8 +1,8 @@
 import processing.sound.*;
 
 SoundFile 
-  A2, A3, Ab4, Ab2, Ab3,
-  B2, B3, Bb4, Bb2, Bb3,
+  A2, A3, Ab4, Ab2, Ab3, 
+  B2, B3, Bb4, Bb2, Bb3, 
   C4, C2, C3, 
   D2, D3, D4, Db4, Db2, Db3, 
   E4, E2, E3, Eb4, Eb2, Eb3, 

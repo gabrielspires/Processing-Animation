@@ -15,7 +15,7 @@
 \use_default_options true
 \maintain_unincluded_children false
 \language brazilian
-\language_package default
+\language_package babel
 \inputencoding auto
 \fontencoding global
 \font_roman "times" "Arial"
@@ -149,6 +149,76 @@ Layout de um piano de 32 teclas
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+O piano tem um tema natalino, com neve caindo e uma imagem de fundo seguindo
+ o mesmo tema.
+\end_layout
+
+\begin_layout Section
+Controles
+\end_layout
+
+\begin_layout Standard
+Cada tecla é mapeada com um som correspondente e elas podem ser tocadas
+ tanto com o mouse quanto com o teclado.
+ Para tocar com o mouse basta clicar em cima da tecla, já com o teclado
+ as 8 primeiras teclas brancas são tocadas com as teclas de 'q' a 'i' e
+ os números acima para as teclas pretas e o restante das teclas são tocadas
+ com a última linha de letras do teclado, ou seja, as teclas de '
+\backslash
+' até o 'shift' passando por 'z', 'x', etc.
+\end_layout
+
+\begin_layout Section
+Neve
+\end_layout
+
+\begin_layout Standard
+A neve é simulada ao desenhar diversas elipses de raio bem pequeno, elas
+ são dispostas de maneira aleatória na área acima do piano e recebem uma
+ força configurada para dar a impressão de que os flocos estão caindo lentamente.
+\end_layout
+
+\begin_layout Standard
+Para dar mais uma opção de interação, o cursor do mouse tem a capacidade
+ de repelir os flocos de neve próximos, basta passar o mouse na área onde
+ a neve está e ver o efeito.
+ Outra maneira de interagir com a neve é simplesmente tocando o piano, já
+ que cada tecla também interage com a neve ao ser tocada.
+ Esse efeito pode ser visto logo acima das teclas.
+\end_layout
+
+\begin_layout Section
+Piano
+\end_layout
+
+\begin_layout Standard
+As teclas do piano foram desenhadas usando simples retângulos com bordas
+ arredondadas, e depois cada tecla foi mapeada com o mouse de acordo com
+ a sua posição na janela, essa foi a parte mais trabalhosa do trabalho,
+ uma vez que tive que verificar tecla por tecla as posições x e y em que
+ elas estão contidas.
+ Cada tecla tem também escrito nela a sua nota correspondente e ao ser tocada
+ um cículo aparece sobre a tecla indicando que ela foi tocada.
+\end_layout
+
+\begin_layout Section
+Referências
+\end_layout
+
+\begin_layout Standard
+Santa Claus and reindeers - fly over the village.
+ Wallpaper Mania.
+ Disponível em: 
+\begin_inset Newline newline
+\end_inset
+
+<http://www.wallpapermania.eu/wallpaper/santa-claus-and-reindeers-fly-over-the-vil
+lage/1280x800>.
+ Acesso em: 10 dez.
+ 2018
 \end_layout
 
 \end_body

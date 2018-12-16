@@ -9,9 +9,10 @@ String[] whiteKeyLabels= {"C2", "D2", "E2", "F2", "G2", "A2", "B2",
   "C3", "D3", "E3", "F3", "G3", "A3", "B3",
   "C4", "D4", "E4", "F4", "G4"};
 
+// Desenha as teclas 
 void drawKeys() {
   stroke(1);
-  // white keys = 19
+  // white keys -> 19
   fill(#FFFFFF);
   for (int i = 0; i < 19; i++) {
     fill(#FFFFFF);
@@ -26,7 +27,7 @@ void drawKeys() {
     text(whiteKeyLabels[i], 18+ whiteKeyWidth * i, 370);
   }
 
-  // black keys = 13
+  // black keys -> 13
   for (int i = 0; i < 18; i++) {
     if (i == 2 || i == 6 || i == 9 || i == 13 || i == 16) i++;
     for (int j = 0; j < 2; j++) {
@@ -49,14 +50,15 @@ void drawKeys() {
   }
 }
 
+// Repele a neve quando se toca
 void applyKeyForce(int x, int y) {
   for (int i = 0; i<num; i++) {
     particles[i].keyForce(x,y);
   }
 }
 
+// Controles do teclado
 void keyPressed(){
-  println(key);
   if(key == 'q') { C2.play();applyKeyForce(30, 198); fill(0);ellipse(30,340,20,20);}
   if(key == '2') { Db2.play();applyKeyForce(55, 198); fill(255);ellipse(55,300,20,20);}
   if(key == 'w') { D2.play();applyKeyForce(80, 198); fill(0);ellipse(80,340,20,20);}
@@ -91,6 +93,7 @@ void keyPressed(){
   if(key == '￿') { G4.play();applyKeyForce(930, 198); fill(0);ellipse(930,340,20,20);}
 }
 
+// Controles do mouse
 void mousePressed() {
   if (mouseX > 5 && mouseX < 55 && mouseY > 318 && mouseY < 395 ||
     mouseX > 5 && mouseX < 41   && mouseY > 198 && mouseY < 318)
